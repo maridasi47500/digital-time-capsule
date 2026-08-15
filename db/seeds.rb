@@ -7,3 +7,8 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+x=Nokogiri::HTML(File.read("./hey.html"))
+x.css("[href*='#method']").each do |y|
+TimeOperation.find_or_create_by(name: y.text)
+end
+p TimeOperation.all

@@ -1,0 +1,2 @@
+class TimeOperation < ApplicationRecord
+end

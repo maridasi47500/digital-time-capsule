@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @time_operation %>
+<%=form_with(url: timecalculation_time_operation_path(@time_operation), html: {method: :get}) do |f|%>
+<div>
+<%=f.label :hello%>
+<%=f.datetime_field :hello, value: DateTime.now%>
+</div>
+<div>
+<%=f.label :result%>
+<%=f.select :result, ["date","datetime","time"]%>
+</div>
+<div>
+<%=f.submit "submit"%>
+</div>
+<%end%>
+
+<div>
+  <%= link_to "Edit this time operation", edit_time_operation_path(@time_operation) %> |
+  <%= link_to "Back to time operations", time_operations_path %>
+
+  <%= button_to "Destroy this time operation", @time_operation, method: :delete %>
+</div>
