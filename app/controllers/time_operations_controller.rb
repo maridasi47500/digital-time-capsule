@@ -8,7 +8,8 @@ class TimeOperationsController < ApplicationController
 
   # GET /time_operations/1 or /time_operations/1.json
   def timecalculation
-    @hey=eval("DateTime.parse(\"#{params[:hello]}\").#{@time_operation.name}.to_#{params[:result]}")
+    @x=Mytimecalculation.create(mydatetime: params[:hello], time_operation_id: @time_operation.id, resultat: params[:result])
+    @hey=eval("DateTime.parse(\"#{params[:hello]}\").#{@time_operation.name}.to_#{params[:result]}") rescue "erreur"
     
   end
   # GET /time_operations/1 or /time_operations/1.json
@@ -70,6 +71,6 @@ class TimeOperationsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def time_operation_params
-      params.expect(time_operation: [ :name ])
+      params.expect(time_operation: [ :name, :entree, :resultat, :argument_id ])
     end
 end

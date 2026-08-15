@@ -15,6 +15,18 @@
     <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name %>
   </div>
+  <div>
+    <%= form.label :entree, style: "display: block" %>
+    <%= form.select :entree, ["date", "datetime", "time", "range"] %>
+  </div>
+  <div>
+    <%= form.label :resultat, style: "display: block" %>
+    <%= form.select :resultat, ["date", "datetime", "time", "range"] %>
+  </div>
+  <div>
+    <%= form.label :argument_id, style: "display: block" %>
+    <%= form.collection_select :argument_id, Argument.all, :id, :name %>
+  </div>
 
   <div>
     <%= form.submit %>

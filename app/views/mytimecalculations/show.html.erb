@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @mytimecalculation %>
+
+<div>
+  <%= link_to "Edit this mytimecalculation", edit_mytimecalculation_path(@mytimecalculation) %> |
+  <%= link_to "Back to mytimecalculations", mytimecalculations_path %>
+
+  <%= button_to "Destroy this mytimecalculation", @mytimecalculation, method: :delete %>
+</div>

@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Arguments" %>
+
+<h1>Arguments</h1>
+
+<div id="arguments">
+  <% @arguments.each do |argument| %>
+    <%= render argument %>
+    <p>
+      <%= link_to "Show this argument", argument %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New argument", new_argument_path %>

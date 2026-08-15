@@ -1,0 +1,27 @@
+<%= form_with(model: mycalculationhasargument) do |form| %>
+  <% if mycalculationhasargument.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(mycalculationhasargument.errors.count, "error") %> prohibited this mycalculationhasargument from being saved:</h2>
+
+      <ul>
+        <% mycalculationhasargument.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :mytimecalculation_id, style: "display: block" %>
+    <%= form.text_field :mytimecalculation_id %>
+  </div>
+
+  <div>
+    <%= form.label :argument_id, style: "display: block" %>
+    <%= form.text_field :argument_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

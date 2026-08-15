@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Mycalculationhasarguments" %>
+
+<h1>Mycalculationhasarguments</h1>
+
+<div id="mycalculationhasarguments">
+  <% @mycalculationhasarguments.each do |mycalculationhasargument| %>
+    <%= render mycalculationhasargument %>
+    <p>
+      <%= link_to "Show this mycalculationhasargument", mycalculationhasargument %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New mycalculationhasargument", new_mycalculationhasargument_path %>

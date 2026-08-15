@@ -1,0 +1,12 @@
+<% content_for :title, "Editing argument" %>
+
+<h1>Editing argument</h1>
+
+<%= render "form", argument: @argument %>
+
+<br>
+
+<div>
+  <%= link_to "Show this argument", @argument %> |
+  <%= link_to "Back to arguments", arguments_path %>
+</div>

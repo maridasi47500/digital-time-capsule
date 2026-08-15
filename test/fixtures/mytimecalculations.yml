@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  time_operation: one
+  mydatetime: 2026-08-15 23:32:26
+  resultat: MyString
+
+two:
+  user_id: 1
+  time_operation: two
+  mydatetime: 2026-08-15 23:32:26
+  resultat: MyString

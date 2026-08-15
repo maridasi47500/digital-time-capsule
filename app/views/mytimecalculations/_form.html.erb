@@ -1,0 +1,37 @@
+<%= form_with(model: mytimecalculation) do |form| %>
+  <% if mytimecalculation.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(mytimecalculation.errors.count, "error") %> prohibited this mytimecalculation from being saved:</h2>
+
+      <ul>
+        <% mytimecalculation.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.number_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.label :time_operation_id, style: "display: block" %>
+    <%= form.text_field :time_operation_id %>
+  </div>
+
+  <div>
+    <%= form.label :mydatetime, style: "display: block" %>
+    <%= form.datetime_field :mydatetime %>
+  </div>
+
+  <div>
+    <%= form.label :resultat, style: "display: block" %>
+    <%= form.text_field :resultat %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

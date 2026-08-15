@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @argument %>
+
+<div>
+  <%= link_to "Edit this argument", edit_argument_path(@argument) %> |
+  <%= link_to "Back to arguments", arguments_path %>
+
+  <%= button_to "Destroy this argument", @argument, method: :delete %>
+</div>

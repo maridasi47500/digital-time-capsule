@@ -1,0 +1,1 @@
+json.partial! "mycalculationhasarguments/mycalculationhasargument", mycalculationhasargument: @mycalculationhasargument

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :photos
+  resources :mycalculationhasarguments
+  resources :mytimecalculations
+  resources :arguments
   resources :time_operations do
     member do
       get "timecalculation"

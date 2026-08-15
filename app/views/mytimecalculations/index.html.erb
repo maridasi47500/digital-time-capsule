@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Mytimecalculations" %>
+
+<h1>Mytimecalculations</h1>
+
+<div id="mytimecalculations">
+  <% @mytimecalculations.each do |mytimecalculation| %>
+    <%= render mytimecalculation %>
+    <p>
+      <%= link_to "Show this mytimecalculation", mytimecalculation %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New mytimecalculation", new_mytimecalculation_path %>
