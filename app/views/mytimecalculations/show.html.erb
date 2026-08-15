@@ -1,6 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @mytimecalculation %>
+<h1>Add arguments</h1>
+<%=render "mycalculationhasarguments/form", mycalculationhasargument: Mycalculationhasargument.new(mytimecalculation_id: @mytimecalculation)%>
 
 <div>
   <%= link_to "Edit this mytimecalculation", edit_mytimecalculation_path(@mytimecalculation) %> |

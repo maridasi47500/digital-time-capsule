@@ -13,12 +13,20 @@
 
   <div>
     <%= form.label :mytimecalculation_id, style: "display: block" %>
-    <%= form.text_field :mytimecalculation_id %>
+    <%= form.hidden_field :mytimecalculation_id %>
   </div>
 
   <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.hidden_field :user_id %>
+  </div>
+  <div>
     <%= form.label :argument_id, style: "display: block" %>
-    <%= form.text_field :argument_id %>
+    <%= form.collection_select :argument_id, Argument.all, :id, :name %>
+  </div>
+  <div>
+    <%= form.label :my_value, style: "display: block" %>
+    <%= form.text_field :my_value %>
   </div>
 
   <div>
