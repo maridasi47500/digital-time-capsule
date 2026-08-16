@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :othertimecalculationhasarguments
+  resources :my_timecalculation_has_time_operations
   resources :photos
   resources :mycalculationhasarguments
   resources :mytimecalculations

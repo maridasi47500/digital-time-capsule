@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "My timecalculation has time operations" %>
+
+<h1>My timecalculation has time operations</h1>
+
+<div id="my_timecalculation_has_time_operations">
+  <% @my_timecalculation_has_time_operations.each do |my_timecalculation_has_time_operation| %>
+    <%= render my_timecalculation_has_time_operation %>
+    <p>
+      <%= link_to "Show this my timecalculation has time operation", my_timecalculation_has_time_operation %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New my timecalculation has time operation", new_my_timecalculation_has_time_operation_path %>

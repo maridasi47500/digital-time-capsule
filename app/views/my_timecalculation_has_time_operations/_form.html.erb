@@ -1,0 +1,27 @@
+<%= form_with(model: my_timecalculation_has_time_operation) do |form| %>
+  <% if my_timecalculation_has_time_operation.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(my_timecalculation_has_time_operation.errors.count, "error") %> prohibited this my_timecalculation_has_time_operation from being saved:</h2>
+
+      <ul>
+        <% my_timecalculation_has_time_operation.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :time_operation_id, style: "display: block" %>
+    <%= form.text_field :time_operation_id %>
+  </div>
+
+  <div>
+    <%= form.label :mytimecalculation_id, style: "display: block" %>
+    <%= form.text_field :mytimecalculation_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

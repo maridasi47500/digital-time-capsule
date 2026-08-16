@@ -1,0 +1,1 @@
+json.array! @my_timecalculation_has_time_operations, partial: "my_timecalculation_has_time_operations/my_timecalculation_has_time_operation", as: :my_timecalculation_has_time_operation

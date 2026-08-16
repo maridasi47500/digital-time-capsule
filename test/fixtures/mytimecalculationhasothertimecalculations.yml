@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mytimecalculation: one
+  time_operation: one
+  resultat: MyString
+
+two:
+  mytimecalculation: two
+  time_operation: two
+  resultat: MyString

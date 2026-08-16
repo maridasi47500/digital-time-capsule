@@ -1,0 +1,1 @@
+json.partial! "my_timecalculation_has_time_operations/my_timecalculation_has_time_operation", my_timecalculation_has_time_operation: @my_timecalculation_has_time_operation
